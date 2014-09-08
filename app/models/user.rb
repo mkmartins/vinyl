@@ -21,4 +21,5 @@ class User < ActiveRecord::Base
   end
 
 
+  validates_formatting_of :phone_number, using: :us_phone
 end
